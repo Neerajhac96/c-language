@@ -1,11 +1,12 @@
 #include<stdio.h>
+
+struct employee{
+    int d,m,y;
+};
 int main(){
-    int arr[10],i;
-    printf("Enter element in an array");
-    for(i=0;i<10;i++){
-        scanf("%d",&arr[i]);
-    }
-    printf("Elements in the array in reverse order are:");
-    for(i=0;i<10;i++)
-    printf("%d ",arr[9-i]);
+    struct employee a;
+    printf("Enter today's date");
+    scanf("%d/%d/%d",&a.d,&a.m,&a.y);
+    printf("Today's date is: %d/%d/%d",a.d,a.m,a.y);
+
 }
