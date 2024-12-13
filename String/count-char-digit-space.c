@@ -4,7 +4,7 @@
 int main()
 {
     char ch[50];
-    int count = 0, i = 0, digit = 0, spaces = 0, cons = 0, vowel = 0;
+    int count = 0, i = 0, digit = 0, spaces = 0, cons = 0, vowel = 0, len = 0;
 
     printf("ENter a string: ");
     fgets(ch, sizeof(ch), stdin);
@@ -30,6 +30,10 @@ int main()
         {
             spaces++;
         }
+        if (ch[i] != ' ')
+        {
+            len++;
+        }
         i++;
     }
     printf("\nNumber of alphabets: %d", count);
@@ -37,7 +41,7 @@ int main()
     printf("\nNumber of spaces: %d", spaces);
     printf("\nNumber of vowels: %d", vowel);
     printf("\nNumber of consonants: %d", cons);
-    printf("\nNumber of character: %d", i);
+    printf("\nNumber of character: %d", len-1);
 
     return 0;
 }
