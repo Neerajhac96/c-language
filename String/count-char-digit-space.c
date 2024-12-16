@@ -42,6 +42,5 @@ int main()
     printf("\nNumber of vowels: %d", vowel);
     printf("\nNumber of consonants: %d", cons);
     printf("\nNumber of character: %d", len-1);
-
     return 0;
 }
