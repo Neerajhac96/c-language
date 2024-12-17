@@ -7,10 +7,10 @@ struct employee
     float salary;
 };
 int main(){
-    struct employee emp[3];
+    struct employee emp[5];
     int i;
     printf("Enter employee details:\n");
-    for(i=0; i<3; i++)
+    for(i=0; i<5; i++)
     {
         printf("Employee: %d\n",i+1);
         printf("Enter employee code: ");
@@ -21,7 +21,7 @@ int main(){
         scanf("%f",&emp[i].salary);
     }
     printf("\nEmployee details:\n");
-    for(i=0; i<3; i++)
+    for(i=0; i<5; i++)
     {
         printf("Detail of Employee: %d\n",i+1);
         printf("Employee code:     %d\n",emp[i].code);

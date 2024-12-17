@@ -15,7 +15,7 @@ int main()
         printf("\n");
     }
 
-    printf("\nRotated Matrix:\n");
+    printf("\nRotated Matrix:\n"); 
     for (i = 2; i >= 0; i--)
     {
         for (j = 2; j >= 0; j--)
