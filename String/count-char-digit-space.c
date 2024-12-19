@@ -13,14 +13,14 @@ int main()
         if ((ch[i] >= 'A' && ch[i] <= 'Z') || (ch[i] >= 'a' && ch[i] <= 'z'))
         {
             count++;
-            if (ch[i] == 'a' || ch[i] == 'e' || ch[i] == 'i' || ch[i] == 'o' || ch[i] == 'u' || ch[i] == 'A' || ch[i] == 'E' || ch[i] == 'I' || ch[i] == 'O' || ch[i] == 'U')
-            {
-                vowel++;
-            }
-            else
-            {
-                cons++;
-            }
+            // if (ch[i] == 'a' || ch[i] == 'e' || ch[i] == 'i' || ch[i] == 'o' || ch[i] == 'u' || ch[i] == 'A' || ch[i] == 'E' || ch[i] == 'I' || ch[i] == 'O' || ch[i] == 'U')
+            // {
+            //     vowel++;
+            // }
+            // else
+            // {
+            //     cons++;
+            // }
         }
         else if (ch[i] >= '0' && ch[i] <= '9')
         {
@@ -39,8 +39,8 @@ int main()
     printf("\nNumber of alphabets: %d", count);
     printf("\nNumber of digits: %d", digit);
     printf("\nNumber of spaces: %d", spaces);
-    printf("\nNumber of vowels: %d", vowel);
-    printf("\nNumber of consonants: %d", cons);
+    // printf("\nNumber of vowels: %d", vowel);
+    // printf("\nNumber of consonants: %d", cons);
     printf("\nNumber of character: %d", len-1);
     return 0;
 }
