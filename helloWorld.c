@@ -1,8 +1,10 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
-    int a,b=10;
-    a=++b+b++;
-    printf("%d %d",a,b);
-    return 0;
+void main()
+{
+    int a, b, *p; // Corrected declaration
+    a = 10;
+    p = &a;
+    b = *p + 20;
+    printf("%d", b); // Corrected quotes
 }
