@@ -7,10 +7,15 @@ struct employee
     float salary;
 };
 int main(){
-    struct employee emp[5];
-    int i;
+    
+    int i,n;
+    printf("Enter the number of employees: ");
+    scanf("%d",&n);
+    struct employee emp[n];
+    printf("\n");
+
     printf("Enter employee details:\n");
-    for(i=0; i<5; i++)
+    for(i=0; i<n; i++)
     {
         printf("Employee: %d\n",i+1);
         printf("Enter employee code: ");
@@ -21,7 +26,7 @@ int main(){
         scanf("%f",&emp[i].salary);
     }
     printf("\nEmployee details:\n");
-    for(i=0; i<5; i++)
+    for(i=0; i<n; i++)
     {
         printf("Detail of Employee: %d\n",i+1);
         printf("Employee code:     %d\n",emp[i].code);
@@ -29,9 +34,9 @@ int main(){
         printf("Employee salary:   %.2f\n",emp[i].salary);
     }
     int key,pos=0,flag=1;
-    printf("Enter Employee code to br search: ");
+    printf("Enter Employee code to be search: ");
     scanf("%d",&key);
-    for(i=0;i<3;i++){
+    for(i=0;i<n;i++){
         if(emp[i].code==key){
             flag=1;
             pos=i;
@@ -40,7 +45,7 @@ int main(){
     if(flag==1){
         printf("Employee code: %d\n",emp[pos].code);
         printf("Employee name: %s\n",emp[pos].name);
-        printf("Employee email: %.2f\n",emp[pos].salary);
+        printf("Employee salary: %.2f\n",emp[pos].salary);
     }
     return 0;
 }

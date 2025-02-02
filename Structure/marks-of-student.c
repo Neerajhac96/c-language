@@ -6,6 +6,8 @@ struct student
     int age;
     float marks[5];
 };
+
+//Function to print student marks
 void print_marks(float arr[5])
 {
     printf("Marks of the student:\n");
@@ -14,6 +16,7 @@ void print_marks(float arr[5])
         printf("Subject %d: %.2f\n", i + 1, arr[i]);
     }
 }
+//Average of marks
 float average_marks(float arr[5])
 {
     float sum = 0;
@@ -23,6 +26,7 @@ float average_marks(float arr[5])
     }
     return sum / 5;
 }
+//function for print name and age
 void print_name_age(struct student std)
 {
     printf("Student Name: %s\n", std.name);
